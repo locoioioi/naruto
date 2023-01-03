@@ -1,0 +1,346 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+/* common */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+body {
+    font-family: 'Architects Daughter', cursive;
+}
+
+/* header  */
+.slider {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+}
+/* background img */
+.wallpaper, .overlayout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* headbar */
+.head-bar-container {
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+.headbar, .side-headbar ul{
+    display: flex;
+    padding: 12px;
+}
+.headbar li, .side-headbar li {
+    padding: 12px;
+    font-size: 27px;
+    color: rgb(198, 220, 71);
+}
+
+.headbar li:hover, .side-headbar li:hover {
+    color: rgba(184, 184, 167,0.7);
+}
+.discription {
+    padding: 20px;
+    position: absolute;
+    bottom: 25% ;
+    transform: translateY(-50%);
+}
+.discription .title {
+    font-size: 100px;
+    color: rgb(198, 220, 71);
+}
+.discription .short-disc {
+    margin-top: 10px;
+    color: rgb(198, 220, 71);
+    font-size: 35px;
+}
+/* content */
+.content{
+    margin-right: 300px;
+    margin-left: 300px;
+    height: 2000px;
+}
+.content .character-title {
+    color: rgb(198, 220, 71);
+    font-size: 50px;
+}
+/* logo */
+.logo-box {
+    position: absolute;
+    display: flex;
+    right: 50%;
+    transform: translateX(50%)
+}
+.logo-box .logo-img {
+    width: 200px;
+}
+/* grid css */
+.grid-container {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px 400px;
+}
+.grid-container .info {
+    margin: 20px 40px;
+}
+/* naurto */
+.grid-container .grid-naruto {
+    background-position: center 125%;
+    position: relative;
+}
+.grid-container .grid-naruto:hover::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    background-color: rgba(184, 184, 167,0.7);
+}
+.grid-container .grid-naruto::before {
+    display: flex;
+    content: "Naruto";
+    position: absolute;
+    font-size: 44px;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 0 10px #333;
+}
+/* sasuke */
+.grid-container .grid-sasuke {
+    background-position: center 42%;
+    position: relative;
+}
+.grid-container .grid-sasuke:hover::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    background-color: rgba(144, 150, 219, 0.7);
+}
+.grid-container .grid-sasuke::before {
+    display: flex;
+    content: "Sasuke";
+    position: absolute;
+    font-size: 44px;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 0 10px #333;
+}
+/* sakura */
+.grid-container .grid-sakura {
+    background-position: center 42%;
+    background-position-x: center;
+    position: relative;
+}
+.grid-container .grid-sakura:hover::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    background-color: rgba(192, 101, 172, 0.7);
+}
+.grid-container .grid-sakura::before {
+    display: flex;
+    content: "Sakura";
+    position: absolute;
+    font-size: 44px;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 0 10px #333;
+}
+/* hinata */
+.grid-container .grid-hinata {
+    background-position: center 89%;
+    background-position-x: center;
+    position: relative;
+}
+.grid-container .grid-hinata:hover::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    background-color: rgba(207, 179, 200, 0.6);
+}
+.grid-container .grid-hinata::before {
+    display: flex;
+    content: "Hinata";
+    position: absolute;
+    font-size: 44px;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 0 10px #333;
+}
+/* itachi */
+.grid-container .grid-itachi {
+    background-position: center 81%;
+    background-position-x: center;
+    position: relative;
+}
+.grid-container .grid-itachi:hover::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    background-color: rgba(104, 74, 81, 0.6);
+}
+.grid-container .grid-itachi::before {
+    display: flex;
+    content: "Itachi";
+    position: absolute;
+    font-size: 44px;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 0 10px #333;
+}
+/* stunade */
+.grid-container .grid-stunade {
+    background-position: center 67%;
+    background-position-x: center;
+    position: relative;
+}
+.grid-container .grid-stunade:hover::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    background-color: rgba(103, 213, 199, 0.6);
+}
+.grid-container .grid-stunade::before {
+    display: flex;
+    content: "Stunade";
+    position: absolute;
+    font-size: 44px;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 0 10px #333;
+}
+/* minato */
+.grid-container .grid-minato {
+    background-position: center 10%;
+    background-position-x: left 30px;
+    position: relative;
+}
+.grid-container .grid-minato:hover::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    background-color: rgba(224, 197, 65, 0.6);
+}
+.grid-container .grid-minato::before {
+    display: flex;
+    content: "Minato";
+    position: absolute;
+    font-size: 44px;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 0 10px #333;
+}
+/* obito */
+.grid-container .grid-obito {
+    background-position: center 40%;
+    position: relative;
+}
+.grid-container .grid-obito:hover::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    background-color: rgba(75, 81, 81, 0.6);
+}
+.grid-container .grid-obito::before {
+    display: flex;
+    content: "Obito";
+    position: absolute;
+    font-size: 44px;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 0 10px #333;
+}
+/* kakashi */
+.grid-container .grid-kakashi {
+    background-position: center 38%;
+    position: relative;
+}
+.grid-container .grid-kakashi:hover::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    background-color: rgba(236, 223, 106, 0.699);
+}
+.grid-container .grid-kakashi::before {
+    display: flex;
+    content: "Kakashi";
+    position: absolute;
+    font-size: 44px;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 0 10px #333;
+}
