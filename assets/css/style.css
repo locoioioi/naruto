@@ -44,7 +44,7 @@ body {
 }
 .headbar li, .side-headbar li {
     padding: 12px;
-    font-size: 27px;
+    font-size: 21px;
     color: rgb(198, 220, 71);
 }
 
@@ -58,13 +58,13 @@ body {
     transform: translateY(-50%);
 }
 .discription .title {
-    font-size: 100px;
+    font-size: 65px;
     color: rgb(198, 220, 71);
 }
 .discription .short-disc {
     margin-top: 10px;
     color: rgb(198, 220, 71);
-    font-size: 35px;
+    font-size: 25px;
 }
 /* content */
 .content{
@@ -74,7 +74,7 @@ body {
 }
 .content .character-title {
     color: rgb(198, 220, 71);
-    font-size: 50px;
+    font-size: 40px;
 }
 /* logo */
 .logo-box {
@@ -98,7 +98,9 @@ body {
 }
 /* naurto */
 .grid-container .grid-naruto {
-    background-position: center 125%;
+    background-position: center 105%;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 .grid-container .grid-naruto:hover::after {
@@ -115,7 +117,7 @@ body {
     display: flex;
     content: "Naruto";
     position: absolute;
-    font-size: 44px;
+    font-size: 30px;
     justify-content: center;
     bottom: 0;
     width: 100%;
@@ -142,7 +144,7 @@ body {
     display: flex;
     content: "Sasuke";
     position: absolute;
-    font-size: 44px;
+    font-size: 30px;
     justify-content: center;
     bottom: 0;
     width: 100%;
@@ -170,7 +172,7 @@ body {
     display: flex;
     content: "Sakura";
     position: absolute;
-    font-size: 44px;
+    font-size: 30px;
     justify-content: center;
     bottom: 0;
     width: 100%;
@@ -180,7 +182,9 @@ body {
 }
 /* hinata */
 .grid-container .grid-hinata {
-    background-position: center 89%;
+    background-position: center 180%;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position-x: center;
     position: relative;
 }
@@ -198,7 +202,7 @@ body {
     display: flex;
     content: "Hinata";
     position: absolute;
-    font-size: 44px;
+    font-size: 30px;
     justify-content: center;
     bottom: 0;
     width: 100%;
@@ -226,7 +230,7 @@ body {
     display: flex;
     content: "Itachi";
     position: absolute;
-    font-size: 44px;
+    font-size: 30px;
     justify-content: center;
     bottom: 0;
     width: 100%;
@@ -254,7 +258,7 @@ body {
     display: flex;
     content: "Stunade";
     position: absolute;
-    font-size: 44px;
+    font-size: 30px;
     justify-content: center;
     bottom: 0;
     width: 100%;
@@ -265,7 +269,8 @@ body {
 /* minato */
 .grid-container .grid-minato {
     background-position: center 10%;
-    background-position-x: left 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 .grid-container .grid-minato:hover::after {
@@ -282,7 +287,7 @@ body {
     display: flex;
     content: "Minato";
     position: absolute;
-    font-size: 44px;
+    font-size: 30px;
     justify-content: center;
     bottom: 0;
     width: 100%;
@@ -293,6 +298,8 @@ body {
 /* obito */
 .grid-container .grid-obito {
     background-position: center 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 .grid-container .grid-obito:hover::after {
@@ -309,7 +316,7 @@ body {
     display: flex;
     content: "Obito";
     position: absolute;
-    font-size: 44px;
+    font-size: 30px;
     justify-content: center;
     bottom: 0;
     width: 100%;
@@ -320,6 +327,8 @@ body {
 /* kakashi */
 .grid-container .grid-kakashi {
     background-position: center 38%;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 .grid-container .grid-kakashi:hover::after {
@@ -336,7 +345,7 @@ body {
     display: flex;
     content: "Kakashi";
     position: absolute;
-    font-size: 44px;
+    font-size: 30px;
     justify-content: center;
     bottom: 0;
     width: 100%;
@@ -382,13 +391,13 @@ body {
 .footer .footer-container .grid-contact {
     display: grid;
     min-width: 50%;
-    padding-left: 120px;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 50px 50px;
 }
 .footer .footer-container .grid-contact2 {
     display: grid;
     min-width: 50%;
+    padding-left: 50px;
     grid-template-columns: 220px 220px;
     grid-template-rows: 75px 75px;
 }
@@ -413,17 +422,19 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    margin-right: 590px;
+    margin-right: 280px;
     margin-bottom: 120px;
     border: 0.5px solid rgb(8, 8, 8);
     padding: 10px;
-    color: #e6e6e6;
     background-color: rgb(8, 8, 8);
 }
-.footer-container .facebook:hover {
+.footer-container .facebook:hover  {
     background-color: #e6e6e6;
+}
+.footer-container .facebook:hover a {
     color: rgb(58, 99, 188);
 }
 .footer-container .facebook a{
     text-decoration: none;
+    color: #e6e6e6;
 }
